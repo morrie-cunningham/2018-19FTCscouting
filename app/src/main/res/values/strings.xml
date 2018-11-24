@@ -1,25 +1,6 @@
 <resources>
-    <string name="app_name">FTC-Match-Scout</string>
+    <string name="app_name">FTC 2018-19 Match Scouting</string>
     <string name="action_files">Files</string>
-    <string-array name="ASN">
-        <item>Fail</item>
-        <item>Success</item>
-    </string-array>
-    <string-array name="ASR">
-        <item>Neither</item>
-        <item>Successful</item>
-        <item>Read Key</item>
-    </string-array>
-    <string-array name="YN">
-        <item>No</item>
-        <item>Yes</item>
-    </string-array>
-    <string-array name="RZ">
-        <item>NONE</item>
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
     <string-array name="DTR">
         <item>1 - WORST</item>
         <item>2</item>
@@ -28,169 +9,37 @@
         <item>5 - BEST</item>
     </string-array>
     <string-array name="AllendaleQualifierTeams">
-        <item>5292</item>
-        <item>5391</item>
-        <item>5957</item>
-        <item>5980</item>
+        <item></item>
+        <item>5385</item>
+        <item>5641</item>
+        <item>6043</item>
         <item>6070</item>
-        <item>6283</item>
-        <item>6482</item>
         <item>7023</item>
-        <item>7772</item>
+        <item>7792</item>
+        <item>7837</item>
         <item>8529</item>
-        <item>8733</item>
         <item>8932</item>
-        <item>9404</item>
-        <item>10031</item>
         <item>10037</item>
-        <item>10104</item>
         <item>10255</item>
-        <item>10315</item>
-        <!--<item>10477</item>-->
         <item>10818</item>
+        <item>11228</item>
         <item>11266</item>
         <item>11317</item>
         <item>11318</item>
         <item>11531</item>
-        <item>11846</item>
-        <item>11851</item>
-        <item>11899</item>
-        <item>11987</item>
-        <item>12746</item>
-        <item>12757</item>
+        <item>11616</item>
         <item>12821</item>
         <item>12944</item>
         <item>12946</item>
         <item>12948</item>
-        <item>13021</item>
-        <item>13300</item>
-        <item>13809</item>
-    </string-array>
-    <string-array name="BigRapidsQualifierTeams">
-        <item>5383</item>
-        <item>5384</item>
-        <item>5641</item>
-        <item>5954</item>
-        <item>6043</item>
-        <item>6070</item>
-        <item>6134</item>
-        <item>7023</item>
-        <item>7837</item>
-        <item>7911</item>
-        <item>8027</item>
-        <item>8533</item>
-        <item>8932</item>
-        <item>9855</item>
-        <item>10601</item>
-        <item>10611</item>
-        <item>10615</item>
-        <item>10699</item>
-        <item>11129</item>
-        <item>11317</item>
-        <item>11318</item>
-        <item>11531</item>
-        <item>11559</item>
-        <item>11616</item>
-        <item>11870</item>
-        <item>11940</item>
-        <item>12504</item>
-        <item>12603</item>
-        <item>12821</item>
-        <item>12921</item>
-        <item>13009</item>
-        <item>13150</item>
-        <item>13222</item>
         <item>13335</item>
-        <item>13450</item>
-        <item>13469</item>
-    </string-array>
-    <string-array name="StateTeams">
-        <item>5290</item>
-        <item>5291</item>
-        <item>5292</item>
-        <item>5385</item>
-        <item>5391</item>
-        <item>5957</item>
-        <item>6079</item>
-        <item>6225</item>
-        <item>7023</item>
-        <item>7043</item>
-        <item>7048</item>
-        <item>7049</item>
-        <item>7085</item>
-        <item>7138</item>
-        <item>7228</item>
-        <item>7252</item>
-        <item>7253</item>
-        <item>8133</item>
-        <item>8239</item>
-        <item>8553</item>
-        <item>8579</item>
-        <item>8621</item>
-        <item>8646</item>
-        <item>8935</item>
-        <item>9133</item>
-        <item>9514</item>
-        <item>9855</item>
-        <item>10031</item>
-        <item>10035</item>
-        <item>10062</item>
-        <item>10538</item>
-        <item>10723</item>
-        <item>11230</item>
-        <item>11244</item>
-        <item>11367</item>
-        <item>11617</item>
-        <item>11717</item>
-        <item>11846</item>
-        <item>11870</item>
-        <item>11987</item>
-        <item>12811</item>
-        <item>12845</item>
-        <item>12862</item>
-        <item>12895</item>
-        <item>13157</item>
-        <item>13222</item>
-        <item>13250</item>
-        <item>13702</item>
-    </string-array>
-    <string-array name="SRTeams">
-        <item></item>
-        <item>3507</item>
-        <item>3763</item>
-        <item>5040</item>
-        <item>5140</item>
-        <item>5975</item>
-        <item>6287</item>
-        <item>6596</item>
-        <item>6931</item>
-        <item>7023</item>
-        <item>7048</item>
-        <item>7190</item>
-        <item>7693</item>
-        <item>8133</item>
-        <item>8533</item>
-        <item>8620</item>
-        <item>8646</item>
-        <item>8711</item>
-        <item>8749</item>
-        <item>8808</item>
-        <item>8813</item>
-        <item>8817</item>
-        <item>9205</item>
-        <item>9890</item>
-        <item>9956</item>
-        <item>9968</item>
-        <item>9978</item>
-        <item>10309</item>
-        <item>10435</item>
-        <item>11190</item>
-        <item>11872</item>
-        <item>12231</item>
-        <item>12528</item>
-        <item>12549</item>
-        <item>12682</item>
-        <item>12835</item>
-        <item>13178</item>
+        <item>13409</item>
+        <item>13554</item>
+        <item>13754</item>
+        <item>13885</item>
+        <item>14697</item>
+        <item>14933</item>
+        <item>15096</item>
+        <item>15339</item>
     </string-array>
 </resources>

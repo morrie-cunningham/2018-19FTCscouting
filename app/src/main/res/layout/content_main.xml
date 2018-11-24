@@ -43,40 +43,13 @@
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <TextView
-            android:id="@+id/textView16"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:gravity="center_vertical"
-            android:text="Box Completed with Pattern?"
-            android:textAppearance="@android:style/TextAppearance.Material.Medium"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-        <TextView
-            android:id="@+id/textView15"
-            android:layout_width="162dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:gravity="center_vertical"
-            android:text="# of Columns"
-            android:textAppearance="@android:style/TextAppearance.Material.Medium"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView14" />
-
-        <TextView
             android:id="@+id/textView14"
             android:layout_width="162dp"
             android:layout_height="40dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
-            android:text="# of Rows"
+            android:text="# of Silver in Lander"
             android:textAppearance="@android:style/TextAppearance.Material.Medium"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
@@ -86,10 +59,9 @@
             android:layout_width="162dp"
             android:layout_height="40dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="112dp"
             android:gravity="center_vertical"
-            android:text="# of Glyphs"
+            android:text="# of Gold in Lander"
             android:textAppearance="@android:style/TextAppearance.Material.Medium"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView9" />
@@ -99,10 +71,9 @@
             android:layout_width="162dp"
             android:layout_height="40dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
-            android:text="Relic Zone"
+            android:text="Climbing"
             android:textAppearance="@android:style/TextAppearance.Material.Medium"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView20" />
@@ -112,10 +83,9 @@
             android:layout_width="162dp"
             android:layout_height="40dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
-            android:text="Balancing Board"
+            android:text="Completely in Crater"
             android:textAppearance="@android:style/TextAppearance.Material.Medium"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView23" />
@@ -138,63 +108,30 @@
             android:layout_width="162dp"
             android:layout_height="40dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
-            android:text="Relic Upright"
+            android:text="In Crater"
             android:textAppearance="@android:style/TextAppearance.Material.Medium"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
         <Spinner
-            android:id="@+id/relicUprightSpinner"
-            android:layout_width="179dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/relicZoneSpinner" />
-
-        <Spinner
-            android:id="@+id/balancingBoardSpinner"
-            android:layout_width="179dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/relicUprightSpinner" />
-
-        <Spinner
             android:id="@+id/driveTeamSpinner"
             android:layout_width="179dp"
             android:layout_height="40dp"
-            android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginTop="50dp"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/balancingBoardSpinner" />
-
-        <Spinner
-            android:id="@+id/relicZoneSpinner"
-            android:layout_width="179dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_completelyInCrater" />
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="202dp"
             android:layout_height="40dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
-            android:text="Glyph in Correct Column"
+            android:text="Gold Mineral Moved"
             android:textAppearance="@android:style/TextAppearance.Material.Medium"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -204,10 +141,9 @@
             android:layout_width="162dp"
             android:layout_height="40dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
-            android:text="Glyph"
+            android:text="Marker"
             android:textAppearance="@android:style/TextAppearance.Material.Medium"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -230,23 +166,33 @@
             android:layout_width="162dp"
             android:layout_height="40dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
-            android:text="Safe Zone"
+            android:text="Parked"
             android:textAppearance="@android:style/TextAppearance.Material.Medium"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="162dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:text="Gold In Lander"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="162dp"
             android:layout_height="40dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
-            android:text="Jewel"
+            android:text="Descend"
             android:textAppearance="@android:style/TextAppearance.Material.Medium"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
@@ -326,11 +272,9 @@
             android:id="@+id/textView6"
             android:layout_width="0dp"
             android:layout_height="40dp"
-            android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="56dp"
             android:gravity="center_vertical"
             android:text="Teleoperated"
             android:textAlignment="center"
@@ -343,18 +287,16 @@
             android:id="@+id/textView20"
             android:layout_width="0dp"
             android:layout_height="40dp"
-            android:layout_marginEnd="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
             android:gravity="center_vertical"
             android:text="End Game"
             android:textAlignment="center"
             android:textAppearance="@android:style/TextAppearance.Material.Large"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
         <TextView
             android:id="@+id/textView6"
@@ -374,17 +316,6 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView25"
             tools:ignore="DuplicateIds" />
-
-        <CheckBox
-            android:id="@+id/checkBox"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
-            android:checked="false"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonUpColumn" />
 
         <Button
             android:id="@+id/submitButton"
@@ -409,7 +340,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
         <EditText
-            android:id="@+id/numOfRows"
+            android:id="@+id/numOfSilverInLander"
             android:layout_width="75dp"
             android:layout_height="40dp"
             android:layout_marginTop="8dp"
@@ -417,11 +348,11 @@
             android:inputType="number"
             android:text="0"
             android:textAlignment="center"
-            app:layout_constraintRight_toLeftOf="@+id/buttonUpRow"
-            app:layout_constraintTop_toBottomOf="@+id/numOfGlyphs" />
+            app:layout_constraintRight_toLeftOf="@+id/buttonUpSilver"
+            app:layout_constraintTop_toBottomOf="@+id/numOfGoldInLander" />
 
         <Button
-            android:id="@+id/buttonDownRow"
+            android:id="@+id/buttonDownSilver"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="40dp"
             android:layout_height="40dp"
@@ -431,93 +362,50 @@
             android:text="-"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintRight_toLeftOf="@+id/numOfRows"
-            app:layout_constraintTop_toBottomOf="@+id/buttonDownGlyph" />
+            app:layout_constraintRight_toLeftOf="@+id/numOfSilverInLander"
+            app:layout_constraintTop_toBottomOf="@+id/buttonDownGold" />
 
         <Button
-            android:id="@+id/buttonDownGlyph"
+            android:id="@+id/buttonDownGold"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="40dp"
             android:layout_height="40dp"
+            android:layout_marginTop="56dp"
             android:backgroundTint="@color/colorPrimary"
             android:text="-"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintRight_toLeftOf="@+id/numOfGlyphs"
-            android:layout_marginTop="56dp"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox_safezone"
-            android:layout_marginRight="0dp" />
+            app:layout_constraintRight_toLeftOf="@+id/numOfGoldInLander"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_goldInLander" />
 
         <EditText
-            android:id="@+id/numOfColumns"
+            android:id="@+id/numOfGoldInLander"
             android:layout_width="75dp"
             android:layout_height="40dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="56dp"
             android:ems="10"
             android:inputType="number"
             android:text="0"
             android:textAlignment="center"
-            app:layout_constraintRight_toLeftOf="@+id/buttonUpColumn"
-            app:layout_constraintTop_toBottomOf="@+id/numOfRows" />
+            app:layout_constraintRight_toLeftOf="@+id/buttonUpGold"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_goldInLander" />
 
         <Button
-            android:id="@+id/buttonUpColumn"
+            android:id="@+id/buttonUpGold"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginTop="8dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:text="+"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonUpRow" />
-
-        <Button
-            android:id="@+id/buttonDownColumn"
-            style="@style/Widget.AppCompat.Button"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="8dp"
-            android:backgroundTint="@color/colorPrimary"
-            android:text="-"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            app:layout_constraintRight_toLeftOf="@+id/numOfColumns"
-            app:layout_constraintTop_toBottomOf="@+id/buttonDownRow" />
-
-        <EditText
-            android:id="@+id/numOfGlyphs"
-            android:layout_width="75dp"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:inputType="number"
-            android:text="0"
-            android:textAlignment="center"
-            app:layout_constraintRight_toLeftOf="@+id/buttonUpGlyph"
             android:layout_marginTop="56dp"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox_safezone"
-            android:layout_marginRight="0dp" />
-
-        <Button
-            android:id="@+id/buttonUpGlyph"
-            style="@style/Widget.AppCompat.Button"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
             android:backgroundTint="@color/colorPrimary"
             android:text="+"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginTop="56dp"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox_safezone" />
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_goldInLander" />
 
         <Button
-            android:id="@+id/buttonUpRow"
+            android:id="@+id/buttonUpSilver"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="40dp"
             android:layout_height="40dp"
@@ -529,37 +417,73 @@
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/buttonUpGlyph" />
+            app:layout_constraintTop_toBottomOf="@+id/buttonUpGold" />
 
         <CheckBox
-            android:id="@+id/checkBox_glyph"
+            android:id="@+id/checkBox_marker"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginRight="8dp"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox_jewel" />
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_descend" />
 
         <CheckBox
-            android:id="@+id/checkBox_safezone"
+            android:id="@+id/checkBox_goldInLander"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_parked" />
+
+        <CheckBox
+            android:id="@+id/checkBox_climbing"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <CheckBox
+            android:id="@+id/checkBox_completelyInCrater"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_inCrater" />
+
+        <CheckBox
+            android:id="@+id/checkBox_inCrater"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_climbing" />
+
+        <CheckBox
+            android:id="@+id/checkBox_parked"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_goldMinMoved" />
+
+        <CheckBox
+            android:id="@+id/checkBox_goldMinMoved"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginRight="8dp"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox_correctColumn" />
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_marker" />
 
         <CheckBox
-            android:id="@+id/checkBox_correctColumn"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginRight="8dp"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginTop="8dp"
-            app:layout_constraintTop_toBottomOf="@+id/checkBox_glyph" />
-
-        <CheckBox
-            android:id="@+id/checkBox_jewel"
+            android:id="@+id/checkBox_descend"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginRight="8dp"

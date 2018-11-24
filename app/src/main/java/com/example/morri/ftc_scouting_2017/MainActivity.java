@@ -31,116 +31,66 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-//        Spinner spinnerJewel = (Spinner) findViewById(R.id.jewelSpinner);
-//        ArrayAdapter<CharSequence> Jadapt = ArrayAdapter.createFromResource(this, R.array.ASN, android.R.layout.simple_spinner_item);
-//        Jadapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//        spinnerJewel.setAdapter(Jadapt);
-
-//        Spinner spinnerGlyph = (Spinner) findViewById(R.id.glyphSpinner);
-//        ArrayAdapter<CharSequence> Gadapt = ArrayAdapter.createFromResource(this, R.array.ASR, android.R.layout.simple_spinner_item);
-//        Gadapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//        spinnerGlyph.setAdapter(Gadapt);
-
-//        Spinner spinnerSZone = (Spinner) findViewById(R.id.safeZoneSpinner);
-//        ArrayAdapter<CharSequence> SZadapt = ArrayAdapter.createFromResource(this, R.array.ASN, android.R.layout.simple_spinner_item);
-//        SZadapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-//        spinnerSZone.setAdapter(SZadapt);
-
-        Spinner spinnerRZone = (Spinner) findViewById(R.id.relicZoneSpinner);
-        ArrayAdapter<CharSequence> RZadapt = ArrayAdapter.createFromResource(this, R.array.RZ, android.R.layout.simple_spinner_item);
-        RZadapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerRZone.setAdapter(RZadapt);
-
-        Spinner spinnerRUp = (Spinner) findViewById(R.id.relicUprightSpinner);
-        ArrayAdapter<CharSequence> RUadapt = ArrayAdapter.createFromResource(this, R.array.YN, android.R.layout.simple_spinner_item);
-        RUadapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerRUp.setAdapter(RUadapt);
-
-        Spinner spinnerBB = (Spinner) findViewById(R.id.balancingBoardSpinner);
-        ArrayAdapter<CharSequence> BBadapt = ArrayAdapter.createFromResource(this, R.array.YN, android.R.layout.simple_spinner_item);
-        BBadapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerBB.setAdapter(BBadapt);
-
         Spinner spinnerDT = (Spinner) findViewById(R.id.driveTeamSpinner);
         ArrayAdapter<CharSequence> DTadapt = ArrayAdapter.createFromResource(this, R.array.DTR, android.R.layout.simple_spinner_item);
         DTadapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerDT.setAdapter(DTadapt);
 
         Spinner spinnerTeams = (Spinner) findViewById(R.id.teamNumberSpinner);
-        ArrayAdapter<CharSequence> TeamsAdapt = ArrayAdapter.createFromResource(this, R.array.SRTeams, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> TeamsAdapt = ArrayAdapter.createFromResource(this, R.array.AllendaleQualifierTeams, android.R.layout.simple_spinner_item);
         TeamsAdapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerTeams.setAdapter(TeamsAdapt);
 
         Switch allianceSwitch = (Switch) findViewById(R.id.allianceColor);
 
-        EditText numGlyphs = (EditText) findViewById(R.id.numOfGlyphs);
-        EditText numRows = (EditText) findViewById(R.id.numOfRows);
-        EditText numColumns = (EditText) findViewById(R.id.numOfColumns);
+        EditText numGold = (EditText) findViewById(R.id.numOfGoldInLander);
+        EditText numSilver = (EditText) findViewById(R.id.numOfSilverInLander);
         EditText scoutName = (EditText) findViewById(R.id.scoutName);
         EditText matchNum = (EditText) findViewById(R.id.matchNumber);
 
-        CheckBox autoJewel = (CheckBox) findViewById(R.id.checkBox_jewel);
-        CheckBox autoGlyph = (CheckBox) findViewById(R.id.checkBox_glyph);
-        CheckBox autoColumn = (CheckBox) findViewById(R.id.checkBox_correctColumn);
-        CheckBox autoSafeZone = (CheckBox) findViewById(R.id.checkBox_safezone);
-        CheckBox boxPattern = (CheckBox) findViewById(R.id.checkBox);
+        CheckBox autoDescend = (CheckBox) findViewById(R.id.checkBox_descend);
+        CheckBox autoMarker = (CheckBox) findViewById(R.id.checkBox_marker);
+        CheckBox autoGoldMinMoved = (CheckBox) findViewById(R.id.checkBox_goldMinMoved);
+        CheckBox autoGoldInLander = (CheckBox) findViewById(R.id.checkBox_goldInLander);
+        CheckBox autoParked = (CheckBox) findViewById(R.id.checkBox_parked);
+
+        CheckBox endClimbing = (CheckBox) findViewById(R.id.checkBox_climbing);
+        CheckBox endInCrater = (CheckBox) findViewById(R.id.checkBox_inCrater);
+        CheckBox endCompletelyInCrater = (CheckBox) findViewById(R.id.checkBox_completelyInCrater);
 
         Button submitButton = (Button) findViewById(R.id.submitButton);
-        Button DGButton = (Button) findViewById(R.id.buttonDownGlyph);
-        Button DRButton = (Button) findViewById(R.id.buttonDownRow);
-        Button DCButton = (Button) findViewById(R.id.buttonDownColumn);
-        Button UGButton = (Button) findViewById(R.id.buttonUpGlyph);
-        Button URButton = (Button) findViewById(R.id.buttonUpRow);
-        Button UCButton = (Button) findViewById(R.id.buttonUpColumn);
-
-        UGButton.setOnClickListener(v -> {
-            int start = Integer.parseInt(numGlyphs.getText().toString());
-            if(start < 24) {
-                start++;
-                String result = String.valueOf(start);
-                numGlyphs.setText(result);
-            }
-        });
-        URButton.setOnClickListener(v -> {
-            int start = Integer.parseInt(numRows.getText().toString());
-            if(start < 8) {
-                start++;
-                String result = String.valueOf(start);
-                numRows.setText(result);
-            }
-        });
-        UCButton.setOnClickListener(v -> {
-            int start = Integer.parseInt(numColumns.getText().toString());
-            if(start < 6) {
-                start++;
-                String result = String.valueOf(start);
-                numColumns.setText(result);
-            }
-        });
+        Button DGButton = (Button) findViewById(R.id.buttonDownGold);
+        Button DSButton = (Button) findViewById(R.id.buttonDownSilver);
+        Button UGButton = (Button) findViewById(R.id.buttonUpGold);
+        Button USButton = (Button) findViewById(R.id.buttonUpSilver);
 
         DGButton.setOnClickListener(v -> {
-            int start = Integer.parseInt(numGlyphs.getText().toString());
+            int start = Integer.parseInt(numGold.getText().toString());
             if(start > 0) {
                 start--;
                 String result = String.valueOf(start);
-                numGlyphs.setText(result);
+                numGold.setText(result);
             }
         });
-        DRButton.setOnClickListener(v -> {
-            int start = Integer.parseInt(numRows.getText().toString());
+        DSButton.setOnClickListener(v -> {
+            int start = Integer.parseInt(numSilver.getText().toString());
             if(start > 0) {
                 start--;
                 String result = String.valueOf(start);
-                numRows.setText(result);
+                numSilver.setText(result);
             }
         });
-        DCButton.setOnClickListener(v -> {
-            int start = Integer.parseInt(numColumns.getText().toString());
-            if(start > 0) {
-                start--;
-                String result = String.valueOf(start);
-                numColumns.setText(result);
-            }
+        UGButton.setOnClickListener(v -> {
+            int start = Integer.parseInt(numGold.getText().toString());
+            start++;
+            String result = String.valueOf(start);
+            numGold.setText(result);
+        });
+        USButton.setOnClickListener(v -> {
+            int start = Integer.parseInt(numSilver.getText().toString());
+            start++;
+            String result = String.valueOf(start);
+            numSilver.setText(result);
         });
 
         submitButton.setOnClickListener(v -> {
@@ -156,17 +106,16 @@ public class MainActivity extends AppCompatActivity {
                     output.put("name", scoutName.getText());
                     output.put("team_number", spinnerTeams.getSelectedItem().toString());
                     output.put("match_number", matchNum.getText());
-                    output.put("auto_jewel", autoJewel.isChecked());
-                    output.put("auto_glyph", autoGlyph.isChecked());
-                    output.put("auto_glyphColumn", autoColumn.isChecked());
-                    output.put("auto_safezone", autoSafeZone.isChecked());
-                    output.put("tele_glyphs", Integer.parseInt(numGlyphs.getText().toString()));
-                    output.put("tele_rows", Integer.parseInt(numRows.getText().toString()));
-                    output.put("tele_columns", Integer.parseInt(numColumns.getText().toString()));
-                    output.put("tele_completePattern", boxPattern.isChecked());
-                    output.put("end_reliczone", spinnerRZone.getSelectedItem().toString());
-                    output.put("end_relicupright", spinnerRUp.getSelectedItem().toString());
-                    output.put("end_balancing", spinnerBB.getSelectedItem().toString());
+                    output.put("auto_descend", autoDescend.isChecked());
+                    output.put("auto_marker", autoMarker.isChecked());
+                    output.put("auto_goldMinMoved", autoGoldMinMoved.isChecked());
+                    output.put("auto_parked", autoParked.isChecked());
+                    output.put("auto_goldInLander", autoGoldInLander.isChecked());
+                    output.put("tele_gold", Integer.parseInt(numGold.getText().toString()));
+                    output.put("tele_silver", Integer.parseInt(numSilver.getText().toString()));
+                    output.put("end_climbing", endClimbing.isChecked());
+                    output.put("end_inCrater", endInCrater.isChecked());
+                    output.put("end_completelyInCrater", endCompletelyInCrater.isChecked());
                     output.put("drive_team", spinnerDT.getSelectedItem().toString());
                     Log.d("output", output.toString());
                 } catch (JSONException e) {
@@ -196,17 +145,16 @@ public class MainActivity extends AppCompatActivity {
                 spinnerTeams.setSelection(0);
                 allianceSwitch.setChecked(false);
                 matchNum.setText("");
-                autoJewel.setChecked(false);
-                autoGlyph.setChecked(false);
-                autoColumn.setChecked(false);
-                autoSafeZone.setChecked(false);
-                numGlyphs.setText("0");
-                numRows.setText("0");
-                numColumns.setText("0");
-                boxPattern.setChecked(false);
-                spinnerRZone.setSelection(0);
-                spinnerRUp.setSelection(0);
-                spinnerBB.setSelection(0);
+                autoDescend.setChecked(false);
+                autoMarker.setChecked(false);
+                autoGoldMinMoved.setChecked(false);
+                autoParked.setChecked(false);
+                autoGoldInLander.setChecked(false);
+                numGold.setText("0");
+                numSilver.setText("0");
+                endClimbing.setChecked(false);
+                endInCrater.setChecked(false);
+                endCompletelyInCrater.setChecked(false);
                 spinnerDT.setSelection(0);
             }
         });
