@@ -81,4 +81,56 @@
         <item>15593</item>
         <item>Add New Team</item>
     </string-array>
+    <string-array name="StateTeams">
+        <item></item>
+        <item>5237</item>
+        <item>5289</item>
+        <item>5290</item>
+        <item>5291</item>
+        <item>5385</item>
+        <item>5411</item>
+        <item>5618</item>
+        <item>5954</item>
+        <item>5957</item>
+        <item>6134</item>
+        <item>6494</item>
+        <item>7023</item>
+        <item>7031</item>
+        <item>7043</item>
+        <item>7047</item>
+        <item>7048</item>
+        <item>7065</item>
+        <item>7138</item>
+        <item>7252</item>
+        <item>7837</item>
+        <item>8478</item>
+        <item>8646</item>
+        <item>8733</item>
+        <item>8935</item>
+        <item>9133</item>
+        <item>9819</item>
+        <item>10255</item>
+        <item>10280</item>
+        <item>10309</item>
+        <item>10538</item>
+        <item>10615</item>
+        <item>10812</item>
+        <item>11129</item>
+        <item>11230</item>
+        <item>11244</item>
+        <item>12303</item>
+        <item>12821</item>
+        <item>12895</item>
+        <item>13222</item>
+        <item>13417</item>
+        <item>13570</item>
+        <item>13995</item>
+        <item>14004</item>
+        <item>14657</item>
+        <item>14951</item>
+        <item>15104</item>
+        <item>15229</item>
+        <item>15270</item>
+        <item>Add New Team</item>
+    </string-array>
 </resources>

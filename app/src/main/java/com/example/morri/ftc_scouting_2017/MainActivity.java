@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         spinnerDT.setAdapter(DTadapt);
 
         Spinner spinnerTeams = (Spinner) findViewById(R.id.teamNumberSpinner);
-        ArrayAdapter<CharSequence> TeamsAdapt = ArrayAdapter.createFromResource(this, R.array.KetteringQualifierTeams, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> TeamsAdapt = ArrayAdapter.createFromResource(this, R.array.StateTeams, android.R.layout.simple_spinner_item);
         TeamsAdapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerTeams.setAdapter(TeamsAdapt);
 
