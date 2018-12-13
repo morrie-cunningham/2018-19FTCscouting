@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         spinnerDT.setAdapter(DTadapt);
 
         Spinner spinnerTeams = (Spinner) findViewById(R.id.teamNumberSpinner);
-        ArrayAdapter<CharSequence> TeamsAdapt = ArrayAdapter.createFromResource(this, R.array.AllendaleQualifierTeams, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> TeamsAdapt = ArrayAdapter.createFromResource(this, R.array.KetteringQualifierTeams, android.R.layout.simple_spinner_item);
         TeamsAdapt.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerTeams.setAdapter(TeamsAdapt);
 
@@ -63,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
         Button DSButton = (Button) findViewById(R.id.buttonDownSilver);
         Button UGButton = (Button) findViewById(R.id.buttonUpGold);
         Button USButton = (Button) findViewById(R.id.buttonUpSilver);
+
+        EditText newTeamNum = (EditText) findViewById(R.id.addedTeamNo);
 
         DGButton.setOnClickListener(v -> {
             int start = Integer.parseInt(numGold.getText().toString());
@@ -104,7 +106,13 @@ public class MainActivity extends AppCompatActivity {
                 JSONObject output = new JSONObject();
                 try {
                     output.put("name", scoutName.getText());
-                    output.put("team_number", spinnerTeams.getSelectedItem().toString());
+
+                    if(spinnerTeams.getSelectedItem().toString().equals("Add New Team")) {
+                        output.put("team_number", newTeamNum.getText());
+                    } else {
+                        output.put("team_number", spinnerTeams.getSelectedItem().toString());
+                    }
+
                     output.put("match_number", matchNum.getText());
                     output.put("auto_descend", autoDescend.isChecked());
                     output.put("auto_marker", autoMarker.isChecked());
@@ -123,7 +131,14 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 // Write JSON to file
-                String outStr = matchNum.getText() + "-" + spinnerTeams.getSelectedItem().toString() + ".json";
+                String outStr = "";
+                if(spinnerTeams.getSelectedItem().toString().equals("Add New Team")) {
+                    outStr = matchNum.getText() + "-" + newTeamNum.getText() + ".json";
+                } else {
+                    outStr = matchNum.getText() + "-" + spinnerTeams.getSelectedItem().toString() + ".json";
+                }
+
+
 
                 File dir = new File(Environment.getExternalStorageDirectory() + "/scoutingFiles/");
                 if(!dir.exists()){
@@ -143,6 +158,7 @@ public class MainActivity extends AppCompatActivity {
 
                 scoutName.setText("");
                 spinnerTeams.setSelection(0);
+                newTeamNum.setText("");
                 allianceSwitch.setChecked(false);
                 matchNum.setText("");
                 autoDescend.setChecked(false);

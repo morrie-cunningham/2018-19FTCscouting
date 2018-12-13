@@ -42,4 +42,43 @@
         <item>15096</item>
         <item>15339</item>
     </string-array>
+    <string-array name="KetteringQualifierTeams">
+        <item></item>
+        <item>2975</item>
+        <item>5289</item>
+        <item>6134</item>
+        <item>7023</item>
+        <item>7031</item>
+        <item>7065</item>
+        <item>7066</item>
+        <item>7643</item>
+        <item>8133</item>
+        <item>8206</item>
+        <item>8529</item>
+        <item>8613</item>
+        <item>9297</item>
+        <item>9500</item>
+        <item>9933</item>
+        <item>10180</item>
+        <item>10438</item>
+        <item>10636</item>
+        <item>10644</item>
+        <item>10645</item>
+        <item>10671</item>
+        <item>10813</item>
+        <item>11360</item>
+        <item>11705</item>
+        <item>12876</item>
+        <item>13222</item>
+        <item>13455</item>
+        <item>14443</item>
+        <item>14487</item>
+        <item>14693</item>
+        <item>14907</item>
+        <item>15090</item>
+        <item>15287</item>
+        <item>15339</item>
+        <item>15593</item>
+        <item>Add New Team</item>
+    </string-array>
 </resources>
